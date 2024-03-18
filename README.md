@@ -1,4 +1,4 @@
-# zhrutils
+# zhr_utils
 1.安装
 >pip install zhr_utils
 
