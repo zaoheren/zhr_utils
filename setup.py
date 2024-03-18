@@ -5,7 +5,7 @@ with open("README.md", "r",encoding='utf-8') as fh:
 
 setup(
   name="zhr_utils",
-  version="0.1.1",
+  version="0.1.2",
   author="zaoheren",
   author_email="zaoheren@hotmail.com",
   description="常用方法库",
