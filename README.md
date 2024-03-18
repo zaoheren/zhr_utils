@@ -1,15 +1,15 @@
 # zhrutils
 1.安装
->pip install zhrutils
+>pip install zhr_utils
 
 2.卸载
->pip uninstall zhrutils
+>pip uninstall zhr_utils
 
 3.更新
->pip install zhrutils --upgrade
+>pip install zhr_utils --upgrade
 
 4.查看版本
->pip show zhrutils
+>pip show zhr_utils
 
 0.1.0 版本更新日志
 1. 动态生成User-Agent
