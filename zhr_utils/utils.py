@@ -149,3 +149,21 @@ def getJianPin(ori_str):
     """根据中文获取简拼"""
     first_letter_list = pinyin(ori_str, style = pypinyin.FIRST_LETTER)
     return ''.join([i[0] for i in first_letter_list])
+def read_random_line(file_path):
+    """随机选取文本文件一行数据"""
+    # 打开文件，读取所有内容并解码（假设是UTF-8编码）
+    with open(file_path, 'r', encoding='utf-8') as txt_file:
+        data = txt_file.read()
+
+    # 计算文件中的总行数
+    lines = data.split('\n')
+    n_lines = len(lines)
+
+    # 随机选择一行的索引（注意：如果最后一行是空行，可能需要减1以避免随机到不存在的行）
+    if lines[-1] == '':
+        random_index = random.randint(0, n_lines - 2)
+    else:
+        random_index = random.randint(0, n_lines - 1)
+
+    # 返回随机选择的行
+    return lines[random_index]
